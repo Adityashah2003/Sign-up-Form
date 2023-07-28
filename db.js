@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb+srv://Flamethrower:Aditya2003@atherbc.4unv7dz.mongodb.net/atherdb?retryWrites=true&w=majority",
+mongoose.connect("ENV",
 {useNewUrlParser:true,useUnifiedTopology:true});
 
 var conn = mongoose.connection;
